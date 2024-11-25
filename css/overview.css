@@ -1,0 +1,39 @@
+/* overview.html */
+.lightblue {
+    background-color: #24AAE1;
+}
+table {
+    width: 100%;
+}
+table th, table td {
+    border: #D2D2D2 1px solid;
+    padding: 1.5rem 0 1.5rem 7rem;
+    letter-spacing: 1px;
+    vertical-align: middle;
+}
+
+table th {
+    background-color: #E8E8E8;
+    font-weight: 400;
+}
+.sp {
+    display: none;
+}
+@media screen and (max-width: 480px) {
+    table th, table td {
+        font-size: 16px;
+    }
+    table th, table td {
+        border: #D2D2D2 1px solid;
+        padding: 20px;
+        letter-spacing: 1px;
+        vertical-align: middle;
+    }  
+    table th {
+        text-align: center;
+        white-space: nowrap;
+    }
+    .mb-10 {
+        margin-bottom: 10px;
+    }
+}

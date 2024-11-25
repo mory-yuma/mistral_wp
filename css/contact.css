@@ -1,0 +1,117 @@
+/* cotact.html*/
+.yellow {
+    background-color: #F7941C;
+}
+.asterisk {
+    color: red;
+}
+.form-guidance {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+.contact-form {
+    width: 100%;
+}
+.contact-form form {
+    width: 100%;
+    border: 2px solid #D2D2D2;
+    margin: 4px 0 0;
+    padding: 50px 100px;
+}
+.contact-form h2 {
+    font-size: 25px;
+    margin-bottom: 26px;
+}
+.contact-form h2:last-of-type {
+    margin-top: 60px;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+.form-row input {
+    width: 320px;
+}
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #F9F9F9;
+    border: 1px solid #D2D2D2;
+}
+.form-group textarea {
+    height: 260px;
+    resize: vertical;
+}
+.radio-group {
+    display: flex;
+    gap: 4px;
+}
+.radio-group label {
+    margin-right: 20px;
+}
+.flex {
+    display: flex;
+}
+.flex input {
+    margin-right: 10px;
+}
+.contact-form button {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border: 3px solid #000;
+    border-radius: 50px;
+    padding: 18px;
+    margin: 55px auto 0;
+    width: 194px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #F7941C;
+    color: #fff;
+}
+@media screen and (max-width: 480px) {
+    .form-guidance {
+        font-size: 16px;
+    }
+    .contact-form h2 {
+        margin-bottom: 26px;
+    }
+    .form-row {
+        display: block;
+    }
+    .form-row input {
+        width: 100%;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .contact-form form {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .radio-group {
+        display: block;
+        margin-top: 10px;
+    }
+    .flex {
+        margin-bottom: 2px;
+    }
+    .contact-form button {
+        border: 1px solid #000;
+        font-size: 16px;
+        padding: 10px;
+    }
+}

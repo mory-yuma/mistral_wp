@@ -1,0 +1,326 @@
+/* メインビジュアル */
+.main-visual {
+
+    height: 1000px;
+    background: url(../img/FV.jpeg) no-repeat center bottom/ cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 58px;
+}
+.main-visual::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+.main-visual-container {
+    position: relative;
+    width: 34%;
+    z-index: 2;
+}
+.main-visual img {
+    max-width: 100%;
+    margin-bottom: 120px;
+}
+.main-visual .company-name {
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+.main-visual .company-description {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+/* セクション */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 200px;
+}
+.section-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 46px;
+}
+/* サービス */
+.services {
+    background-color: #F15929;
+    position: relative;
+}
+.services::after{
+    content: "";
+    display: block;
+    background-image: url(../img/wave_orange.svg);
+    background-size: cover;
+    width: 100%;
+    height: 150px; /* 必要に応じて高さを調整 */
+    position: absolute;
+    left: 0;
+    top: -140px;
+    z-index: 1;
+  }
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.servicee {
+    font-size: 40px;
+    font-weight: 700;
+}
+.service-item {
+    background-color: #fff;
+    padding: 48px;
+    max-width: 400px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.service-title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 27px;
+}
+.service-description {
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: auto;
+}
+.more-button {
+    font-size: 16px;
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    margin-top: 40px;
+    padding: 16px 40px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    border: #000 2px solid;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+.more-button:hover {
+    background-color: #F15929;
+    color: #fff;
+}
+.plus {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+/* パートナー募集 */
+.partner-recruitment {
+    background-color: #fff;
+    position: relative;
+}
+.partner-recruitment::after{
+    content: "";
+    display: block;
+    background-image: url(../img/wave.svg);
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: -140px;
+    z-index: 1;
+}
+.partner-recruitment-title {
+    color: #1F3F99;
+}
+.boxes {
+    display: grid;
+    grid-template: 
+    "img1 text1" 1fr
+    "text2 img2" 1fr
+    /1fr 1fr;
+    margin-bottom: 70px;
+}
+.boxes img {
+    width: 100%;
+    height: 100%;
+}
+.box1 {
+    grid-area: img1;
+}
+.box2 {
+    grid-area: img2;
+}
+.box3 {
+    grid-area: text1;
+}
+.box4 {
+    grid-area: text2;
+}
+.box-description {
+    padding:  60px 40px 50px;
+    background-color: #0F75BC;
+    color: #fff;
+}
+.box-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.box-text {
+    font-size: 16px;
+    line-height: 30px;
+}
+.recruitment-button {
+    width: 320px;
+    margin: 0 auto;
+}
+.contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 0 5px #0F75BC;
+    background-color: #0F75BC;
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+.contact-button:hover {
+    background-color: #2F8FD6;
+    box-shadow: 0 0 0 5px #2F8FD6;
+}
+/* 新着情報 */
+.news {
+    background-color: #FEBE0E;
+    position: relative;
+}
+.news::after{
+    content: "";
+    display: block;
+    background-image: url(../img/wave-yellow.png);
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: -140px;
+    z-index: 1;
+}
+.news_posts {
+    background-color: #fff;
+    padding: 24px 50px;
+}
+.post {
+    margin-bottom: 10px;
+}
+.time, .title {
+    font-size: 16px;
+}
+.time {
+    margin-bottom: 8px;
+}
+
+
+.sp_br {
+    display: none;
+}
+@media screen and (max-width: 480px) {
+    /* メインビジュアル */
+    .main-visual-container {
+        width: 70%;
+    }
+    .main-visual .company-name {
+        font-size: 24px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .main-visual .company-description {
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 0;
+        text-align: center;
+    }
+    .sp_br {
+        display: block;
+    }
+    .main-visual {
+        margin-bottom: 0;
+    }
+    /* wave */
+    .services::after {
+        background-size: contain;
+        top: -30px;
+    }
+    .partner-recruitment::after {
+        background-size: contain;
+        top: -30px;
+    }
+    .news::after {
+        background-size: contain;
+        top: -30px;
+    }
+    /* サービスセクション */
+    .services-container {
+        display: block;
+        width: 350px;
+        margin: 0 auto;
+    }
+    .service-item {
+        margin-bottom: 60px;
+    }
+    .section-title {
+        font-size: 34px;
+        margin-bottom: 36px;
+    }
+    .service-title {
+        font-size: 24px;
+    }
+    .service-description {
+        line-height: 36px;
+    }
+    .container {
+        padding: 140px 0 200px;
+    }
+
+
+    .boxes {
+        grid-template:
+        "text1" auto
+        "img1" auto
+        "text2" auto
+        "img2" auto
+        / 1fr;
+    }
+    .boxes img {
+        height: auto;
+    }
+    .box3, .box4 {
+        height: 400px;
+    }
+    .box-title {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .box-text {
+        line-height: 36px;
+    }
+
+    .news_posts   {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

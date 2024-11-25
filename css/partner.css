@@ -1,0 +1,84 @@
+/* partner.html */
+.blue {
+    background-color: #0F75BC;
+}
+.recruitment-secton {
+    width: 100%;
+}
+.recruitment-item {
+    height: 280px;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+.recruitment-image {
+    width: 454px;
+    height: 262px;
+    overflow: hidden;
+}
+.recruitment-image img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; /* 画像を切り取ってコンテナ内に収める */
+}
+.recruitment-text {
+    width: 413px;
+}
+.recruitment-title {
+    color: #0A4C7B;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.recruitment-description {
+    font-size: 16px;
+    line-height: 30px;
+}
+.recruitment-button {
+    width: 320px;
+    margin: 0 auto;
+}
+.contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 0 5px #0F75BC;
+    background-color: #0F75BC;
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.contact-button:hover {
+    background-color: #2F8FD6;
+    box-shadow: 0 0 0 5px #2F8FD6;
+}
+@media screen and (max-width: 480px) {
+    .recruitment-item {
+        display: block;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .recruitment-image {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .recruitment-text {
+        width: 100%;
+    }
+    .recruitment-title {
+        margin-bottom: 20px;
+    }
+    .recruitment-description {
+        line-height: 1.6rem;
+    }
+}

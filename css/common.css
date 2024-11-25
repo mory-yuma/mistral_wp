@@ -1,0 +1,247 @@
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+body {
+    position: relative;
+}
+img {
+    width: 100%;
+}
+main {
+    margin-top: 80px;
+}
+/* ヘッダー */
+header {
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+header .header_logo {
+    width: 100px; 
+}
+header .pc_nav {
+    margin: 0 0 0 auto;
+}
+.list_nav_header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.burger {
+    width: 40px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+}
+.burger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.burger.is-active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 7px);
+}
+.burger.is-active span:nth-child(2) {
+    opacity: 0;
+}
+.burger.is-active span:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -15px);
+}
+.sp_menu {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 5;
+    transition-duration: 0.5s;
+    padding: 150px 50px 0;
+}
+.sp_menu.is-active {
+    left: 0;
+}
+.sp_nav {
+    width: 100%;
+}
+.sp_nav li {
+    margin-bottom: 34px;
+
+}
+.sp_nav a {
+    font-size: 18px;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+.sp_nav img {
+    width: 18px;
+    margin-left: auto;
+}
+/* フッター */
+#footer {
+    padding: 20px 0 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-top: #000 1px solid;
+}
+.footer-center {
+    width: 60%;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-container img {
+    width: 100px;
+    height: auto; 
+}
+.footer-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.copyright {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+.top-center {
+    width: 1000px;
+}
+
+/* subpage */
+.subpage-center {
+    width: 900px;
+    margin: 0 auto;
+}
+.title-container {
+    height: 340px;
+    padding: 80px 0;
+}
+.page-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+.wave-top {
+    position: relative;
+    padding: 30px;
+    margin-bottom: 200px;
+}
+.wave-top::after{
+    content: "";
+    display: block;
+    background-image: url(../img/wave.svg);
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: -140px;
+    z-index: 1;
+}
+
+
+/* モバイル用CSS */
+@media screen and (max-width: 480px) {
+    .wave-top::after {
+        background-size: contain;
+        height: 40px;
+    }
+    /* ヘッダー */
+    header {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    header .header_logo {
+        width:  100px;
+    }
+    .burger {
+        display: flex;
+        background-size: 100%;
+    }
+    .pc_nav {
+        display: none;
+    }
+    .sp_menu {
+        display: flex;
+    }
+    /* メイン */
+    main p {
+        font-size: 16px;
+    }
+    .subpage-center {
+        padding: 60px 20px;
+        width: 100%;
+    }
+    .wave-top {
+        padding: 0;
+    }
+    /* フッター */
+    #footer {
+        font-size: 12px;
+    }
+    .footer-container {
+        display: block;
+        text-align: center;
+    }
+    .footer-center {
+        width: 80%;
+    }
+    .footer-container img {
+        margin: 0 0 40px;
+    }
+    .footer-container ul {
+        gap: 0;
+    }
+    .footer-container ul .policy_link {
+        flex-basis: 100%;
+        margin-top: 10px;
+    }
+    
+    .title-container {
+        height: 170px;
+        padding: 60px 0;
+    }
+    .page-title {
+        font-size: 36px;
+    }
+    .wave-top {
+        margin-bottom: 60px;
+    }
+    .wave-top::after {
+        top: -30px;
+    }
+}
